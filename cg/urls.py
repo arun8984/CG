@@ -23,7 +23,7 @@ admin.site.site_header = "Admin Portal"
 admin.site.site_title = "Admin Portal"
 admin.site.index_title = "Welcome to Admin Portal"
 urlpatterns = [
-    re_path(r'^$', include(weburls)),
+    re_path(r'', include(weburls)),
     re_path(r'^jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
 ]
